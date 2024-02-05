@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>
+    {{student.id}}
+   
+    {{student.name}}
+    {{student.course}}
+
+
+    <hr>
+
+    {% for student in all %}
+
+    <h1><li><a href="{% url 'view' student.id %}">{{student.name}}</a></li></h1>
+    {% endfor %}
+
+
+
+</h1>
+    </body>
+</html>

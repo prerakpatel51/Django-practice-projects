@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    {% for student in students %}
+    {{student.name}}
+    {{student.roll}}
+    {{student.course}}<br>
+
+    {% endfor %}
+
+
+    <hr>
+
+    {% for student in freshers %}
+    {{student.name}}
+    {{student.roll}}
+    {{student.course}}<br>
+
+    {% endfor %}
+
+
+
+
+    </body>
+</html>
